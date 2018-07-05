@@ -40,6 +40,11 @@ public class Main {
               ctx.render("look at this!");
             })
 
+            .get("testing2", ctx -> {
+              ctx.render("new test!");
+            })
+
+
             .get("db", ctx -> {
               Blocking.get(() -> {
                 try (Connection connection = ctx.get(DataSource.class).getConnection()) {
