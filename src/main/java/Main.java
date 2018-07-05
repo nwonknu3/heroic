@@ -43,6 +43,9 @@ public class Main {
             .get("testing2", ctx -> {
               ctx.render("new test!");
             })
+            .get("testing3", ctx -> {
+              ctx.render("new new test!");
+            })
 
 
             .get("db", ctx -> {
